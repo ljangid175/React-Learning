@@ -6,10 +6,10 @@ function App() {
     const [counterValue, setCounterValue] = useState(5)
 
 	const addValue = () => {
-        setCounterValue(counterValue + 1);
+        counterValue === 20 ? window.alert('Youve reached the highest value') : setCounterValue(counterValue + 1);
 	};
     const subValue = () => {
-        counterValue !== 0 ? setCounterValue(counterValue - 1) : window.alert('oyye thamja kakke');
+        counterValue !== 0 ? setCounterValue(counterValue - 1) : window.alert("Can't reduce the value below this");
 	};
 
 	return (
